@@ -1,16 +1,17 @@
 ## Confidence Interval on a Proportion
 
-+ You flick a tack 50 times and finds that it points up 18 times.  Being a 
-budding statistician, you readily compute a 95% confidence interval on the 
-probability that the tack points up using the usual STAT 121 formula: 
-$\hat{p} \pm 1.96 \sqrt{\hat{p}(1-\hat{p})/n}$
-where $n=50$ and, for the data you collected, $\hat{p}=18/50$ so the confidence
-interval is (0.23,0.49).
++ You flick a tack 50 times and finds that it points up 18 times.  Being a
+budding statistician, you readily compute a 95% confidence interval on the
+probability that the tack points up using the usual STAT 121 formula:
+![equation](https://latex.codecogs.com/gif.latex?%5Chat%7Bp%7D%20%5Cpm%201.96%20%5Csqrt%7B%5Chat%7Bp%7D%281-%5Chat%7Bp%7D%29/n%7D)
+where n=50 and, for the data you collected,
+![equation](https://latex.codecogs.com/gif.latex?%5Chat%7Bp%7D%3D18/50) so the
+confidence interval is (0.23,0.49).
 
 + You then recall that this confidence interval procedure is based on a
 central limit theorem which assumes a large sample size.  Thus, despite being
 named a "95% confidence interval," the procedure may not have 95% coverage in
-finite (e.g., $n=50$) samples.  What is the coverage of this confidence 
+finite (e.g., n=50) samples.  What is the coverage of this confidence 
 interval procedure if the actual probability that the tack points up is 0.4? 
 Remember to assess your Monte Carlo error!  Solve the problem by performing a 
 simulation study in an R script called `tack.R` (or `tack.Rmd`).
